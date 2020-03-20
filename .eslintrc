@@ -11,7 +11,23 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": "off",
+    "prettier/prettier": ["error"],
+    "linebreak-style": 0,
+    "no-underscore-dangle": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-use-before-define": "off",
+    "import/prefer-default-export": "off",
+    "no-prototype-builtins": "off",
+    "import/extensions": [0, "ignorePackages", {
+      "js": "never",
+      "jsx": "never",
+      "ts": "never",
+      "tsx": "never",
+      "mjs": "never"
+    }],
+    "import/no-unresolved": "off"
   }
 }
 
