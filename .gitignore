@@ -27,3 +27,6 @@ yarn.lock
 
 # github
 /.github
+
+# ide
+/.idea
