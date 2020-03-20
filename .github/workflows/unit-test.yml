@@ -27,9 +27,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: install
-        uses: bahmutov/npm-install@v1
-        with:
-          working-directory: .
+        uses: bahmutov/npm-install@HEAD
 
       - name: run test
         run: yarn test
