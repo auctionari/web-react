@@ -28,7 +28,6 @@ jobs:
 
       - name: install
         uses: bahmutov/npm-install@v1
-        run: yarn
         working-directory: .
 
       - name: run test
