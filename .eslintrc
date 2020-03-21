@@ -1,8 +1,9 @@
 {
+  "env": {
+    "jest": true
+  },
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "plugins": [ "@typescript-eslint" ],
   "extends": [
     "prettier",
     "airbnb",
@@ -13,34 +14,36 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    "import/extensions": [
+      "error",
+      "never"
+    ],
     "react/jsx-filename-extension": [
       0,
       {
         "extensions": [
           ".js",
           ".jsx",
-          ".tsx",
-          ".ts"
+          ".ts",
+          ".tsx"
         ]
       }
     ]
   },
   "settings": {
-    "parser": "typescript-eslint-parser",
-    "plugins": [
-      "import"
-    ],
-    "rules": {
-      // turn on errors for missing imports
-      "import/no-unresolved": "error"
-    },
     "import/resolver": {
-      // use <root>/tsconfig.json
-      "typescript": {}
+      "node": {
+        "extensions": [
+          ".js",
+          ".ts",
+          ".jsx",
+          ".tsx"
+        ]
+      },
+      "typescript": {
+        "alwaysTryTypes": true
+      }
     }
-  },
-  "env": {
-    "jest": true
   }
 }
 
