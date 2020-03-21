@@ -1,26 +1,50 @@
 import React from 'react';
-import { Button, Calendar } from 'antd';
-import './App.css';
+import { Button } from 'antd';
 
-function onPanelChange(value: any, mode: any) {
-  console.log(value, mode);
-}
+import { Header, Footer, Body } from '@layout/Layout';
+import styled, {
+  Container,
+  HeaderText,
+  HeaderTextBold,
+  HR,
+  Styled,
+} from '@style';
 
-function App() {
+import 'reset.css';
+
+const App = ({ className }: Styled) => {
   return (
-    <div className="App">
-      <Button type="primary">Button</Button>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-      <Calendar onPanelChange={onPanelChange} />
+    <div className={className}>
+      <Header />
+      <HR />
+      <Body>
+        <Container>
+          <div className="body">
+            <HeaderText>
+              아, 깜빡할 뻔 했군요.
+              <br />
+              소개합니다, 슈퍼스타 <HeaderTextBold>이. 지. 영</HeaderTextBold>!
+            </HeaderText>
+          </div>
+        </Container>
+      </Body>
+
+      <Footer>
+        <Container> powered by jaeeunna </Container>
+      </Footer>
     </div>
   );
-}
+};
 
-export default App;
+export default styled(App)`
+  * {
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', sans-serif, serif;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  div.body {
+    line-height: 0.5;
+  }
+`;

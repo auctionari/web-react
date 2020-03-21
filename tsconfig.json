@@ -20,11 +20,23 @@
     "jsx": "react",
     "baseUrl": "src",
     "paths": {
-      "~/*": [
-        "*"
+      "@common": [
+        "common/Common"
       ],
-      "~domain/*": [
+      "@style": [
+        "common/Styled"
+      ],
+      "@layout/*": [
+        "layout/*"
+      ],
+      "@domain/*": [
         "domain/*"
+      ],
+      "@util/*": [
+        "util/*"
+      ],
+      "@/*": [
+        "*"
       ]
     }
   },
