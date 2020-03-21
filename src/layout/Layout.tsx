@@ -22,8 +22,8 @@ const Header: React.FC<Component> = ({ className, traceId }) => {
         </HeaderText>
         <HeaderTextLight>
           옥나리와 함께 재미있는 일들을 많이 만들어봐요
-          スポカハンサンスは多国語UIに対応するため、Noto
-          SansとLatoを元にカスタムしたフォントです。改善を繰り返し、進化したスポカハンサンスを公開します{' '}
+          スポカハンサンスは多国語UIに対応するため、
+          。改善を繰り返し、進化したスポカハンサンスを公開します{' '}
         </HeaderTextLight>
       </Container>
     </section>

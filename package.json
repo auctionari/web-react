@@ -150,6 +150,7 @@
       "^\\@/(.*)$": "<rootDir>/src/$1",
       "^\\@layout/(.*)$": "<rootDir>/src/layout/$1",
       "^\\@domain/(.*)$": "<rootDir>/src/domain/$1",
+      "^\\@view/(.*)$": "<rootDir>/src/view/$1",
       "^\\@style$": "<rootDir>/src/common/Styled"
     },
     "moduleFileExtensions": [
